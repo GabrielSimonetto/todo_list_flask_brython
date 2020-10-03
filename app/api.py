@@ -19,6 +19,7 @@ def tasks():
 
 @api.route('/tasks', methods=['POST'])
 def task_register():
+    # quem vigia os vigieiros?
     ts = TodoSchema()
     try:
         task = ts.load(request.json)
